@@ -18,7 +18,7 @@ Then install the npm dependencies from the static directory.
 
 As long as the `flasknpm_env` virtual environment is activated you can launch the server from any directory by running 
 
-```consold
+```console
 >> python -m flask --app flasknpm run
 ```
 

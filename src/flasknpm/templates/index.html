@@ -3,18 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<title>three-js app</title>
-		<style>
-			body { margin: 0; }
-		</style>
+        <link 
+            rel="stylesheet" 
+            type="text/css"
+            href="{{ url_for('static', filename='css/styles.css') }}">
         <script type="importmap">
             {
                 "imports": {
-                    "three": "../static/node_modules/three/build/three.module.js"
+                    "three": "../static/node_modules/three/build/three.module.js",
+                    "three/addons/controls/TrackballControls.js": "../static/node_modules/three/examples/jsm/controls/TrackballControls.js"
                 }
             }
         </script>
 	</head>
 	<body>
+        <div id="viewer-container">
+            <button id="reset-button">Reset View</button>
+        </div>
 		<script
             type="module"
             src="{{ url_for('static', filename='js/app.js') }}"

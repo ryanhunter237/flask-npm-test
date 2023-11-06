@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+#viewer-container {
+    position: relative;
+    height: 100vh;
+}
+
+#reset-button {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    background-color: #0074d9;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
